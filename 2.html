@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .main {
+            background: lightblue;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+
+        .body1,
+        .body3 {
+            flex: 1
+        }
+
+        .body2 {
+            flex: 1;
+            flex-direction: column;
+            background: grey;
+            justify-content: center;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .l1,
+        .l2,
+        .l3,
+        .l4 {
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            color: cornsilk;
+            display: flex;
+        }
+    </style>
+    <script src="2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class=main>
+        <div class="body1"></div>
+        <div class="body2">
+            <div class="l1">
+                <input id="usernameid" type="text" placeholder="Enter username" style="justify-content:center" />
+            </div>
+            <div class="l2">
+                <input id="pw" type="passwordid" placeholder="Enter password" />
+            </div>
+            <div class="l3"><input id="gmailid" type="gmail" placeholder="Enter gmail" /></div>
+            <div class=l4><button onclick="submitHere()">Submit</button></div>
+
+        </div>
+        <div class="body3 " id="commentBox">
+            <div id="referances"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!--https://forms.gle/UxEF6ZLo6rkG5UmS6-->
